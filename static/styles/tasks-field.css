@@ -1,0 +1,22 @@
+.tasks{
+    display: flex;         
+    justify-content: space-between;
+    margin-top: 50px;
+}
+/* Отступы для столбцов */
+.backlog,
+.in-process,
+.done,
+.in-basket{
+    margin-right: 50px;
+    margin-top: 50px ;
+    background-color: rgb(233, 187, 127);
+    
+}
+/* Настройка заголовков столбцов */
+h3{
+    border-style: hidden;
+    border-radius: 10px 10px 10px 10px ;
+    background-color: rgb(148, 166, 228);
+    margin-bottom: 50px;
+}
