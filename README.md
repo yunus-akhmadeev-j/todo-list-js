@@ -1,2 +1,2 @@
-**https://yunus-akhmadeev-j.github.io/todo-list-js/
-**
+[# Source https://yunus-akhmadeev-j.github.io/todo-list-js/
+]
