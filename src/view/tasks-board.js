@@ -1,45 +1,30 @@
 import { createElement } from "../framework/render.js";
-
-function createTaskBoardComponentTemplate() {
+import { StatusLabel } from "../const.js";
+function createTasksBoardComponentTemplate(status) {
   return (` 
   
+   <div class="task-body ${status}">   
+ <h3>${StatusLabel[status]}</h3>                 
+                    <ul class="task-list">
+                        
+                    </ul>
+                  </div>
+
   
 
-  <section class="ttt">
-  <div class="task-body">
-      <ul class="task-list"><h3>Backlog</h3>
-          <li class="task-ex">Выучить JS</li>
-                    <li class="task-ex">Выучить React</li>
-                    <li class="task-ex">Сделать домашку</li>
-      </ul>
-  </div>
-  <div class="task-body">
-      <ul class="task-list"><h3>In progress</h3>
-           <li class="task-ex">Выпить смузи</li>
-                    <li class="task-ex">Попить воды</li>
-      </ul>
-  </div>
-  <div class="task-body">
-      <ul class="task-list"><h3>Done</h3>
-          <li class="task-ex">Позвонить маме</li>
-                    <li class="task-ex">Погладить кота</li>
-      </ul>
-  </div>
-  <div class="task-body">
-      <ul class="task-list"><h3>Basket</h3>
-          <li class="task-ex">Сходить погулять</li>
-                    <li class="task-ex">Прочитать Войну и Мир</li>
-          
-      </ul>
-  </div>
-         </section>   
+        
 
-`);
-}
+`);}
 
-export default class TaskBoardComponent {
+export default class TasksBoardComponent {
+  status;
+
+  constructor({ status }) {
+    this.status = status;
+  }
+
   getTemplate() {
-    return createTaskBoardComponentTemplate();
+    return createTasksBoardComponentTemplate(this.status);
   }
 
   getElement() {
@@ -53,4 +38,5 @@ export default class TaskBoardComponent {
   removeElement() {
     this.element = null;
   }
+
 }

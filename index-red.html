@@ -39,34 +39,34 @@
         </div>
         
         <section class="tasks">
-            <section class="ttt">
-            <div class="task-body">
-                <ul class="task-list"><h3>Backlog</h3>
-                    <li class="task-ex">Выучить JS</li>
-                    <li class="task-ex">Выучить React</li>
-                    <li class="task-ex">Сделать домашку</li>
-                </ul>
-            </div>
-            <div class="task-body">
-                <ul class="task-list"><h3>In progress</h3>
-                    <li class="task-ex">Выпить смузи</li>
-                    <li class="task-ex">Попить воды</li>
-                </ul>
-            </div>
-            <div class="task-body">
-                <ul class="task-list"><h3>Done</h3>
-                    <li class="task-ex">Позвонить маме</li>
-                    <li class="task-ex">Погладить кота</li>
-                </ul>
-            </div>
-            <div class="task-body">
-                <ul class="task-list"><h3>Basket</h3>
-                    <li class="task-ex">Сходить погулять</li>
-                    <li class="task-ex">Прочитать Войну и Мир</li>
+            
+                <div class="task-body ${status}">   <h3>${StatusLabel[status]}</h3>                 
+                    <ul class="task-list">
+                        <li class="task-ex">${task.title}</li>
+                        <li class="task-ex">${task.title}</li>
+                        <li class="task-ex">${task.title}</li> 
+                    </ul>
+                  </div>
+                <div class="task-body ${status}"><h3>${StatusLabel[status]}</h3>
+                    <ul class="task-list">
+                        <li class="task-ex">${task.title}</li>
+                        <li class="task-ex">${task.title}</li>
+                    </ul>
+                </div>
+                <div class="task-body ${status}"><h3>${StatusLabel[status]}</h3>
+                    <ul class="task-list">
+                        <li class="task-ex">${task.title}</li>
+                        <li class="task-ex">${task.title}</li>
+                    </ul>
+                </div>
+                <div class="task-body ${status}"><h3>${StatusLabel[status]}</h3>
+                    <ul class="task-list">
+                        <li class="task-ex">${task.title}</li>
+                        <li class="task-ex">${task.title}</li>
                     
-                </ul>
-            </section>
-        </div>
+                    </ul>
+                </div>
+               
         </section>
         <div class="clear-button">
             <button class="button-clear">

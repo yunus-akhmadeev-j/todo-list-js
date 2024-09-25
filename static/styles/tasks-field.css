@@ -1,11 +1,7 @@
 section{
-    display: flex;
-}
-.ttt{
-             
-    justify-content: space-between;
-    width: 2000px;
-    
+    display: flex;         
+    justify-content: space-around;
+    padding: 40px;
 }
 /* Отступы для столбцов */
 .task-body{
