@@ -2,9 +2,14 @@
 *{
     margin: 0;
     padding: 0;
+    
+}
+.task_body{
+    background-color: rgb(69, 77, 105);
 }
 #main{
-    background-color: rgb(69, 77, 105);
+    
+    padding: 25px;
 }
 /* Заголовок */
 .header h1{

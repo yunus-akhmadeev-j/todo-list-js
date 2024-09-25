@@ -1,16 +1,20 @@
-.tasks{
-    display: flex;         
+section{
+    display: flex;
+}
+.ttt{
+             
     justify-content: space-between;
-    margin-top: 50px;
+    width: 2000px;
+    
 }
 /* Отступы для столбцов */
-.backlog,
-.in-process,
-.done,
-.in-basket{
+.task-body{
     margin-right: 50px;
     margin-top: 50px ;
     background-color: rgb(233, 187, 127);
+    width: 20%;
+    text-align: center;
+    border-radius: 10px 10px 0px 0px ;
     
 }
 /* Настройка заголовков столбцов */

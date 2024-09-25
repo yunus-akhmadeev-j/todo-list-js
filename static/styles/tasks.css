@@ -1,17 +1,16 @@
 .tasks{
     font-size: 1.5em;
-    margin-right: 100px;
+ 
+   
     
 }
-ul{
+*{
     list-style: none;
 }
 /* для каждой строки задаем свои свойства */
-h3{
-    width: 140px;
-}
 
-.task1{
+
+li{
     padding-right: 40px;
     border-style: hidden;
     margin-bottom: 20px;
